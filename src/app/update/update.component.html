@@ -1,0 +1,18 @@
+<p>update works!</p>
+<form class="container" [formGroup]="fruitform" name="form" >
+    <ul>
+        <li>
+    
+            <p>Name:*</p>
+            <input for="name" formControlName="name" class="field-style" placeholder="Enter Name"  [(ngModel)]="fruitatindex.name">
+        </li>
+        <li>
+            <p>color:*</p>
+            <input for="color" formControlName="color" class="field-style" placeholder="Enter Color"
+                placeholder="Enter Color" [(ngModel)]="fruitatindex.color">
+        </li>
+        <input type="submit" (click)="updateData()"  value="update"
+        class="field-style field-split align-right " />
+
+    </ul>
+    </form>

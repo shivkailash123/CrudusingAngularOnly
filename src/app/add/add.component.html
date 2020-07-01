@@ -1,0 +1,24 @@
+<p>add works!</p>
+<form class="container" [formGroup]="fruitform" name="form" >
+<ul>
+    <li>
+
+        <p>Name:*</p>
+        <input for="name" formControlName="name" class="field-style" placeholder="Enter Name" placeholder="Enter Name">
+    </li>
+    <li>
+        <p>color:*</p>
+        <input for="color" formControlName="color" class="field-style" placeholder="Enter Color"
+            placeholder="Enter Color">
+    </li>
+
+    <li>
+       
+        <input type="submit" (click)="addData()"  value="Submit"
+            class="field-style field-split align-right " />
+
+    </li>
+
+
+</ul>
+</form>
